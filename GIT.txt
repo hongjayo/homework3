@@ -1,0 +1,13 @@
+﻿github：https://github.com/hongjayo/homework3.git
+name：hongjayo
+PW：GHk@720111
+
+
+git config --global user.name "hongjayo"
+git config --global user.email "jayohong1458@gmail.com"
+git init
+git add .
+git commit -m "homewor3-main"
+git branch -M main
+git remote add origin https://github.com/hongjayo/homework3.git
+git push -u origin main
