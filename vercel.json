@@ -16,10 +16,5 @@
       "GEMINI_API_KEY": "AIzaSyBlYVDEjAo7k5cZhtoRso63Ww4HIsaRanc",
       "GEMINI_MODEL": "gemini-1.5-flash"
     },
-    "functions": {
-      "app.py": {
-        "memory": 1024,
-        "maxDuration": 10
-      }
-    }
+
 }
