@@ -10,8 +10,8 @@ import threading
 load_dotenv()
 
 # 設定 Gemini API
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBlYVDEjAo7k5cZhtoRso63Ww4HIsaRanc")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel(GEMINI_MODEL)
 
@@ -32,6 +32,12 @@ def chat():
 
 # Streamlit 介面
 def main():
+    st.set_page_config(
+        page_title="AI 智慧問答機器人",
+        page_icon="🤖",
+        layout="centered"
+    )
+    
     st.title("AI 智慧問答機器人")
     
     # 初始化聊天歷史
